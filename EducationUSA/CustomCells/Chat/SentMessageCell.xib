@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="135" id="URQ-5x-NUd" customClass="SentMessageCell" customModule="EducationUSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="URQ-5x-NUd" id="gVq-68-9zW">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="wgx-aE-vb3">
+                        <rect key="frame" x="367" y="66.5" width="0.0" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" id="cBl-85-bWY"/>
+                            <constraint firstAttribute="height" constant="48" id="yFc-7O-UE2"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Kelly Martin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-Zq-V4B">
+                        <rect key="frame" x="217.5" y="11" width="57" height="16.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIH-sa-l1m">
+                        <rect key="frame" x="134" y="29.5" width="223" height="71.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Love it! Thanks for your  guide!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da0-r9-c8e">
+                                <rect key="frame" x="12" y="8" width="199" height="39"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="04:30 am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9s-eR-Asd">
+                                <rect key="frame" x="115" y="47" width="48" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Delivered" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2o9-39-fgp">
+                                <rect key="frame" x="168" y="47" width="46.5" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0050009568220000002" green="0.22123652699999999" blue="0.39355438949999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2o9-39-fgp" secondAttribute="trailing" constant="8.5" id="3xv-S4-vV7"/>
+                            <constraint firstItem="da0-r9-c8e" firstAttribute="leading" secondItem="gIH-sa-l1m" secondAttribute="leading" constant="12" id="47n-JZ-rFG"/>
+                            <constraint firstItem="m9s-eR-Asd" firstAttribute="top" secondItem="da0-r9-c8e" secondAttribute="bottom" id="70g-Kj-Sdo"/>
+                            <constraint firstAttribute="trailing" secondItem="da0-r9-c8e" secondAttribute="trailing" constant="12" id="CVP-lg-rN4"/>
+                            <constraint firstItem="2o9-39-fgp" firstAttribute="centerY" secondItem="m9s-eR-Asd" secondAttribute="centerY" id="FQQ-7O-u2E"/>
+                            <constraint firstItem="m9s-eR-Asd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gIH-sa-l1m" secondAttribute="leading" constant="12" id="MuC-6b-HxB"/>
+                            <constraint firstItem="da0-r9-c8e" firstAttribute="top" secondItem="gIH-sa-l1m" secondAttribute="top" constant="8" id="WIN-zL-sUz"/>
+                            <constraint firstAttribute="bottom" secondItem="m9s-eR-Asd" secondAttribute="bottom" constant="8" id="rCY-xn-WhH"/>
+                            <constraint firstItem="2o9-39-fgp" firstAttribute="leading" secondItem="m9s-eR-Asd" secondAttribute="trailing" constant="5" id="w5h-nt-0ac"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gIH-sa-l1m" firstAttribute="top" secondItem="hZb-Zq-V4B" secondAttribute="bottom" constant="2" id="CRs-aW-8Y2"/>
+                    <constraint firstAttribute="bottom" secondItem="wgx-aE-vb3" secondAttribute="bottom" id="JqC-gy-J5u"/>
+                    <constraint firstItem="hZb-Zq-V4B" firstAttribute="centerX" secondItem="gIH-sa-l1m" secondAttribute="centerX" id="NWE-YH-5Bk"/>
+                    <constraint firstItem="wgx-aE-vb3" firstAttribute="leading" secondItem="gIH-sa-l1m" secondAttribute="trailing" constant="10" id="g51-bU-v4W"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="gIH-sa-l1m" secondAttribute="bottom" constant="3" id="gdn-5f-eMf"/>
+                    <constraint firstItem="hZb-Zq-V4B" firstAttribute="top" secondItem="gVq-68-9zW" secondAttribute="topMargin" id="mq1-Ie-3Zq"/>
+                    <constraint firstAttribute="trailing" secondItem="wgx-aE-vb3" secondAttribute="trailing" constant="8" id="vGK-Wg-rmE"/>
+                    <constraint firstItem="gIH-sa-l1m" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gVq-68-9zW" secondAttribute="leadingMargin" constant="35" id="xfG-eD-qiW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="deliveryStatus" destination="2o9-39-fgp" id="7d7-vC-M8U"/>
+                <outlet property="imgProfile" destination="wgx-aE-vb3" id="7KU-Sr-HuP"/>
+                <outlet property="lblDate" destination="m9s-eR-Asd" id="1Bm-JD-zUq"/>
+                <outlet property="lblMessage" destination="da0-r9-c8e" id="jya-JW-Unn"/>
+                <outlet property="lblName" destination="hZb-Zq-V4B" id="CZu-r8-TbS"/>
+                <outlet property="viewMessage" destination="gIH-sa-l1m" id="8Sm-Pl-qL7"/>
+            </connections>
+            <point key="canvasLocation" x="-2.5" y="17.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="UserPlaceholder" width="16" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PopUp" customModule="EducationUSA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE4-0A-RfE">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <connections>
+                        <action selector="btnScreenPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="A6T-Hc-aJr"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOd-rE-Slc">
+                    <rect key="frame" x="37.5" y="208.5" width="300" height="249"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="75r-8L-xfr">
+                            <rect key="frame" x="0.0" y="45" width="300" height="204"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </tableView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attachments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MK9-IG-NYz">
+                            <rect key="frame" x="0.0" y="10" width="300" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.050980392159999999" green="0.19215686269999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYM-Wr-U4G">
+                            <rect key="frame" x="0.0" y="44" width="300" height="1"/>
+                            <color key="backgroundColor" red="0.039215686270000001" green="0.21960784310000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="BHx-2z-clZ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="75r-8L-xfr" firstAttribute="top" secondItem="dYM-Wr-U4G" secondAttribute="bottom" id="6IA-6S-u5h"/>
+                        <constraint firstItem="MK9-IG-NYz" firstAttribute="leading" secondItem="gOd-rE-Slc" secondAttribute="leading" id="6PF-3g-1hx"/>
+                        <constraint firstItem="75r-8L-xfr" firstAttribute="leading" secondItem="gOd-rE-Slc" secondAttribute="leading" id="D7b-Kg-W34"/>
+                        <constraint firstItem="MK9-IG-NYz" firstAttribute="top" secondItem="gOd-rE-Slc" secondAttribute="top" constant="10" id="DvY-hj-bFm"/>
+                        <constraint firstAttribute="width" secondItem="gOd-rE-Slc" secondAttribute="height" multiplier="169:140" id="FTE-uP-E9H"/>
+                        <constraint firstItem="75r-8L-xfr" firstAttribute="leading" secondItem="gOd-rE-Slc" secondAttribute="leading" id="Idi-Ln-dx2"/>
+                        <constraint firstItem="dYM-Wr-U4G" firstAttribute="top" secondItem="MK9-IG-NYz" secondAttribute="bottom" constant="10" id="QPm-vC-4lT"/>
+                        <constraint firstAttribute="trailing" secondItem="dYM-Wr-U4G" secondAttribute="trailing" id="Ubs-uD-eVT"/>
+                        <constraint firstAttribute="trailing" secondItem="75r-8L-xfr" secondAttribute="trailing" id="Ukb-FG-fH3"/>
+                        <constraint firstAttribute="bottom" secondItem="75r-8L-xfr" secondAttribute="bottom" id="XoX-ss-5Cb"/>
+                        <constraint firstAttribute="trailing" secondItem="75r-8L-xfr" secondAttribute="trailing" id="a0c-km-FYF"/>
+                        <constraint firstAttribute="trailing" secondItem="MK9-IG-NYz" secondAttribute="trailing" id="kgQ-gt-VBx"/>
+                        <constraint firstAttribute="bottom" secondItem="75r-8L-xfr" secondAttribute="bottom" id="loH-Tn-O5G"/>
+                        <constraint firstItem="dYM-Wr-U4G" firstAttribute="leading" secondItem="gOd-rE-Slc" secondAttribute="leading" id="ziG-Ga-Zpe"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.17645218970000001" green="0.1764828265" blue="0.17644250389999999" alpha="0.64784888698630139" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fE4-0A-RfE" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8eG-BV-cIN"/>
+                <constraint firstItem="gOd-rE-Slc" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="G8U-0m-kaJ"/>
+                <constraint firstItem="fE4-0A-RfE" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="JgD-gY-Y1P"/>
+                <constraint firstItem="gOd-rE-Slc" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="TL0-Tv-kry"/>
+                <constraint firstAttribute="bottom" secondItem="fE4-0A-RfE" secondAttribute="bottom" id="jp3-Jk-jAY"/>
+                <constraint firstItem="gOd-rE-Slc" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="qsP-jK-fin"/>
+                <constraint firstAttribute="trailing" secondItem="fE4-0A-RfE" secondAttribute="trailing" id="wCw-9K-Hsl"/>
+            </constraints>
+            <connections>
+                <outlet property="tableViewAttachment" destination="75r-8L-xfr" id="E9T-lz-tqg"/>
+                <outlet property="view" destination="gOd-rE-Slc" id="AKt-45-Hvm"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="105.5"/>
+        </view>
+    </objects>
+</document>
