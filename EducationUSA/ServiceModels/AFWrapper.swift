@@ -306,7 +306,7 @@ class AFWrapper: NSObject {
                 
             case .failure(let error):
                 print("👹 Error in calling post request")
-                failure(error.localizedDescription as! NSError)
+                failure(error)
                 break
             }
         }
@@ -378,6 +378,8 @@ class AFWrapper: NSObject {
 //        }
         
     }
+    
+    
     
     
     

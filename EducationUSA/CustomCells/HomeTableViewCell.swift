@@ -55,6 +55,8 @@ class HomeTableViewCell: UITableViewCell {
         lblDay.text = String(describing: (dateComponents?.day)!)
         lblYear.text = String(describing: (dateComponents?.year)!)
         
+    
+        
         lblMonth.text = Utility.getDateFormat(date: data.eventDate, In: "yyyy-MM-dd", Out: "MMM").uppercased()
         
         let des = data.descriptionValue?.convertHtml().string

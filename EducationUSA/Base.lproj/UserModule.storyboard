@@ -310,11 +310,11 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Md-XS-R4E">
                                                 <rect key="frame" x="294.33333333333331" y="543.66666666666663" width="84.666666666666686" height="38.333333333333371"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="piU-Pk-Kn2">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cX2-fF-Cun">
                                                         <rect key="frame" x="0.0" y="0.0" width="38.333333333333336" height="38.333333333333336"/>
                                                         <state key="normal" image="fbicon"/>
                                                         <connections>
-                                                            <action selector="facebookClicked:" destination="FUo-Zs-DvN" eventType="touchUpInside" id="JbO-dz-IqR"/>
+                                                            <action selector="facebookClicked:" destination="FUo-Zs-DvN" eventType="touchUpInside" id="osE-ct-Osl"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sww-c4-W3k">

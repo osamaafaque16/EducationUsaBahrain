@@ -142,6 +142,8 @@ class EventDetailController: BaseController {
         let endTime = Utility.getDateFormat(date: (eventData?.endTime)!, In: "HH:mm:ss", Out: "hh:mm a")
         lblTime.text = "\(strTime) to \(endTime)"
         lblDate.text = strDate
+//        lblTime.text = "timeeee"
+//        lblDate.text = "dateeee"
 //        switch (dateComponents.weekday!)
 //        {
 //

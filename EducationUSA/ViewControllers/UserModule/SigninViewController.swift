@@ -13,6 +13,7 @@ import Hero
 import RealmSwift
 import FBSDKLoginKit
 import TwitterKit
+import AuthenticationServices
 
 class SigninViewController: BaseController, UITextFieldDelegate {
     @IBOutlet weak var rounderView: UIView!
@@ -106,7 +107,13 @@ class SigninViewController: BaseController, UITextFieldDelegate {
     @IBAction func twitterClicked(_ sender: Any) {
         self.loginWithTwitter()
     }
-
+    
+    @available(iOS 13.0, *)
+    @IBAction func appleClicked(_ sender: Any) {
+        print("apple login")
+        self.loginWithApple()
+    }
+    
     @IBAction func guestClicked(_ sender: Any) {
         
         callGuestSignInService()
@@ -421,6 +428,19 @@ extension SigninViewController {
             
         }
     
+    @available(iOS 13.0, *)
+    func loginWithApple(){
+        
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+        
+        let authorizationController = ASAuthorizationController(authorizationRequests: [request])
+        authorizationController.delegate = self
+        authorizationController.presentationContextProvider = self
+        authorizationController.performRequests()
+    }
+    
     
     func callSocialSignInService(parameter:[String:Any], loginType : UserSocialLoginType) {
         self.view.endEditing(true)
@@ -466,6 +486,78 @@ extension SigninViewController {
         
     }
 }
+
+extension SigninViewController : ASAuthorizationControllerDelegate {
+    @available(iOS 13.0, *)
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithError error: Error) {
+
+        print(error.localizedDescription)
+    }
+    
+    @available(iOS 13.0, *)
+    func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
+        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+            
+            // Create an account in your system.
+            // For the purpose of this demo app, store the these details in the keychain.
+            
+            if let identityTokenData = appleIDCredential.identityToken,
+                let identityTokenString = String(data: identityTokenData, encoding: .utf8) {
+                print("Identity Token \(identityTokenString)")
+            }
+            
+            //Perform apple login
+            let EmailID = appleIDCredential.email ?? "Apple user\(Int.random(in: 0...100000))"
+            
+            let FirstName = "\(appleIDCredential.fullName?.givenName ?? "")"
+            let LastName = "\(appleIDCredential.fullName?.familyName ?? "")"
+            
+            var FullName = "\(FirstName) \(LastName)"
+            
+            if FirstName.isEmpty{
+                FullName = EmailID.components(separatedBy: "@").first ?? ""
+            }
+            if FullName.isEmpty{
+                FullName = EmailID
+            }
+            
+            let ProviderKey = "\(appleIDCredential.user)"
+            
+            let params:[String:Any] = ["FullName":FullName,
+                                       "social_media_id":ProviderKey,
+                                       "EmailID":EmailID,
+                                       "social_media_platform":"apple",
+                                       "device_type" : "ios",
+                                       "device_token" : Singleton.sharedInstance.deviceToken]
+            print(params)
+            self.callSocialSignInService(parameter: params, loginType: .apple)
+            
+        } else if let passwordCredential = authorization.credential as? ASPasswordCredential {
+            // Sign in using an existing iCloud Keychain credential.
+            let username = passwordCredential.user
+            let password = passwordCredential.password
+            
+            // For the purpose of this demo app, show the password credential as an alert.
+            DispatchQueue.main.async {
+                let message = "The app has received your selected credential from the keychain. \n\n Username: \(username)\n Password: \(password)"
+                let alertController = UIAlertController(title: "Keychain Credential Received",
+                                                        message: message,
+                                                        preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .cancel, handler: nil))
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+}
+
+extension SigninViewController : ASAuthorizationControllerPresentationContextProviding {
+    @available(iOS 13.0, *)
+    func presentationAnchor(for controller: ASAuthorizationController) -> ASPresentationAnchor {
+        return self.view.window!
+    }
+}
+
+
 enum UserSocialLoginType : Int{
         case facebook = 1
         case twitter = 2

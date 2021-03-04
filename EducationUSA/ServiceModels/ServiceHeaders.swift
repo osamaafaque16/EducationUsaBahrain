@@ -13,8 +13,8 @@ import Foundation
 //var BASE_URL: String =  "http://educationusa.stagingic.com/api/"
 //var ChatBase_URL: String =  "https://educationusachat.stagingic.com/node"
 
-//var BASE_URL: String =  "https://educationusa.live/api/"
-var BASE_URL: String =  "http://educationusabahrain.stagingic.com/api/"
+var BASE_URL: String =  "http://educationusa.live/api/"
+//var BASE_URL: String =  "http://educationusabahrain.stagingic.com/api/"
 
 var ChatBase_URL: String =  "https://chat.educationusa.live/node"
 

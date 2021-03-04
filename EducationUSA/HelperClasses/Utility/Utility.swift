@@ -253,7 +253,7 @@ class Utility{
     
     static func getDateComponents(_ today:String) -> DateComponents? {
         let formatter  = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        formatter.dateFormat = "yyyy-MM-dd"
         guard let todayDate = formatter.date(from: today) else { return nil }
         let myCalendar = Calendar(identifier: .gregorian)
         let dateComponents = myCalendar.dateComponents([.day,.month,.year,.weekday], from: todayDate)

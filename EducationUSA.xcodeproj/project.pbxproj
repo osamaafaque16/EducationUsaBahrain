@@ -559,9 +559,9 @@
 			children = (
 				1ACB8F21256582730096C728 /* StudentVisaController.swift */,
 				1ACB8F18256562FD0096C728 /* FullBirghtController.swift */,
+				1D28C1DB1FFD622B008D2212 /* EventDetailController.swift */,
 				1D80E7B11FF41027000EC844 /* HomeViewController.swift */,
 				1D48C9A91FF772A200610986 /* EventController.swift */,
-				1D28C1DB1FFD622B008D2212 /* EventDetailController.swift */,
 				E85BA10C20297A3900065B2C /* WebViewController.swift */,
 				1D61C0FD1FFEBFCB00182370 /* EducationGuideDetailController.swift */,
 				81B8F37B21CE25F3004C3B98 /* EducationGuideDetailWebViewController.swift */,

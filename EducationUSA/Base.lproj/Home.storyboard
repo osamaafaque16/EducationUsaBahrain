@@ -504,7 +504,7 @@ Advisor</string>
                                                                 <constraint firstAttribute="width" constant="1" id="5hk-kQ-jik"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Education USA korea road show" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrl-Qt-Ybu">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Education USA korea road show" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lrl-Qt-Ybu">
                                                             <rect key="frame" x="81" y="47.666666666666664" width="280" height="17.333333333333336"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
                                                             <color key="textColor" red="0.050980392159999999" green="0.19215686269999999" blue="0.34509803919999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -523,7 +523,7 @@ Advisor</string>
                                                             </userDefinedRuntimeAttributes>
                                                         </label>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="next" translatesAutoresizingMaskIntoConstraints="NO" id="CcN-a5-MNB">
-                                                            <rect key="frame" x="367.66666666666669" y="72.333333333333329" width="17.333333333333314" height="17.333333333333329"/>
+                                                            <rect key="frame" x="368.66666666666669" y="72.333333333333329" width="17.333333333333314" height="17.333333333333329"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US higher Educational Profesional" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAg-zh-L8a">
                                                             <rect key="frame" x="81" y="67" width="280" height="34.666666666666657"/>
@@ -546,7 +546,7 @@ Advisor</string>
                                                         <constraint firstItem="2rz-Pz-Onj" firstAttribute="centerY" secondItem="Hjf-oL-siQ" secondAttribute="centerY" id="JeB-w6-9Cr"/>
                                                         <constraint firstItem="bv6-Vz-Lgg" firstAttribute="trailing" secondItem="rAg-zh-L8a" secondAttribute="trailing" id="Mml-rp-bal"/>
                                                         <constraint firstItem="Hjf-oL-siQ" firstAttribute="leading" secondItem="gN2-hS-GKY" secondAttribute="leading" id="NLl-zY-Lvt"/>
-                                                        <constraint firstAttribute="trailing" secondItem="CcN-a5-MNB" secondAttribute="trailing" constant="5" id="Npe-QA-3cl"/>
+                                                        <constraint firstAttribute="trailing" secondItem="CcN-a5-MNB" secondAttribute="trailing" constant="4" id="Npe-QA-3cl"/>
                                                         <constraint firstItem="rAg-zh-L8a" firstAttribute="trailing" secondItem="Lrl-Qt-Ybu" secondAttribute="trailing" id="Qnq-fj-E1t"/>
                                                         <constraint firstItem="Lrl-Qt-Ybu" firstAttribute="leading" secondItem="2rz-Pz-Onj" secondAttribute="trailing" constant="8" id="SmY-OQ-ghQ"/>
                                                         <constraint firstItem="rAg-zh-L8a" firstAttribute="top" secondItem="Lrl-Qt-Ybu" secondAttribute="bottom" constant="2" id="W8D-z9-MKO"/>
@@ -1255,17 +1255,8 @@ Advisor</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer" translatesAutoresizingMaskIntoConstraints="NO" id="bs5-A2-31U">
-                                <rect key="frame" x="0.0" y="673" width="414" height="63"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="bs5-A2-31U" secondAttribute="height" multiplier="125:19" id="jKu-nK-cDJ"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="footer-logo" translatesAutoresizingMaskIntoConstraints="NO" id="MlR-XD-jOe">
-                                <rect key="frame" x="158" y="682" width="98" height="45"/>
-                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="twd-oD-lEs">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nay-B1-ZTi">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="622.66666666666663"/>
@@ -1286,7 +1277,7 @@ Advisor</string>
                                                                 <fragment content="View Attachment    ">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.80392156862745101" green="0.0" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                                        <font key="NSFont" metaFont="menu" size="11"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -1350,15 +1341,10 @@ Advisor</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="twd-oD-lEs" secondAttribute="trailing" id="8dr-8l-ufi"/>
-                            <constraint firstItem="MlR-XD-jOe" firstAttribute="centerY" secondItem="bs5-A2-31U" secondAttribute="centerY" id="8ny-G5-TJb"/>
-                            <constraint firstAttribute="trailing" secondItem="bs5-A2-31U" secondAttribute="trailing" id="LJL-Xe-8Av"/>
-                            <constraint firstItem="bs5-A2-31U" firstAttribute="top" secondItem="twd-oD-lEs" secondAttribute="bottom" id="LeJ-83-Ec0"/>
-                            <constraint firstItem="48j-mv-iGz" firstAttribute="top" secondItem="bs5-A2-31U" secondAttribute="bottom" id="Nlh-kp-lK4"/>
                             <constraint firstItem="twd-oD-lEs" firstAttribute="top" secondItem="5Ra-dl-Bme" secondAttribute="top" id="Vhy-ek-bvg"/>
                             <constraint firstItem="nay-B1-ZTi" firstAttribute="width" secondItem="5Ra-dl-Bme" secondAttribute="width" id="bwB-Wr-dl9"/>
                             <constraint firstItem="twd-oD-lEs" firstAttribute="leading" secondItem="5Ra-dl-Bme" secondAttribute="leading" id="hZN-2E-SJt"/>
-                            <constraint firstItem="bs5-A2-31U" firstAttribute="leading" secondItem="5Ra-dl-Bme" secondAttribute="leading" id="hcV-RD-XJG"/>
-                            <constraint firstItem="MlR-XD-jOe" firstAttribute="centerX" secondItem="bs5-A2-31U" secondAttribute="centerX" id="uDW-Py-B8P"/>
+                            <constraint firstItem="twd-oD-lEs" firstAttribute="bottom" secondItem="5Ra-dl-Bme" secondAttribute="bottomMargin" id="iTi-z4-PI3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1372,7 +1358,7 @@ Advisor</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ohx-rm-k7t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="788"/>
+            <point key="canvasLocation" x="1589.8550724637682" y="787.50000000000011"/>
         </scene>
         <!--Education Guide Detail Web View Controller-->
         <scene sceneID="386-0A-gLf">
@@ -1402,7 +1388,7 @@ Advisor</string>
                                                 <fragment content="View Attachment    ">
                                                     <attributes>
                                                         <color key="NSColor" red="0.80392156862745101" green="0.0" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                        <font key="NSFont" metaFont="menu" size="11"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
                                                 </fragment>
@@ -1673,7 +1659,7 @@ Advisor</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6QH-pM-7yH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="900" y="1485"/>
+            <point key="canvasLocation" x="3281" y="2160"/>
         </scene>
         <!--Event Detail Controller-->
         <scene sceneID="KZF-Si-kqU">
@@ -2067,7 +2053,7 @@ Advisor</string>
                                                 <fragment content="View Attachment    ">
                                                     <attributes>
                                                         <color key="NSColor" red="0.80392156862745101" green="0.0" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="message" size="11"/>
+                                                        <font key="NSFont" metaFont="menu" size="11"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
                                                 </fragment>
