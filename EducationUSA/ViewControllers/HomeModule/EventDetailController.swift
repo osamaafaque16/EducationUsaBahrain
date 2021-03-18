@@ -45,6 +45,7 @@ class EventDetailController: BaseController {
     override func viewDidLoad() {
         currentController = Controllers.EventDetail
         super.viewDidLoad()
+        textViewEventDescription.delegate = self
         textViewEventDescription.textContainerInset = UIEdgeInsets(top: 0, left: -5, bottom: 0, right: 0)
         
         // Do any additional setup after loading the view.
@@ -131,19 +132,22 @@ class EventDetailController: BaseController {
             //configureMap()
         }else{
             
-            stackViewLocation.isHidden = true
-            viewMap.isHidden = true
+          //  stackViewLocation.isHidden = true
+           // viewMap.isHidden = true
             //eventTitle.isHidden = true
         }
         
-        let dateComponents = Utility.getDateComponents((eventData?.eventDate)!)!
+//        let dateComponents = Utility.getDateComponents((eventData?.eventDate)!)!
+//        guard let startingTime = eventData?.startTime  else {return}
+//        guard let endingTime = eventData?.endTime  else {return}
+//
         let strDate = Utility.getDateFormat(date: (eventData?.eventDate)!, In: "yyy-MM-dd HH:mm:ss", Out: "EEEE, MMMM dd, yyyy")
-        let strTime = Utility.getDateFormat(date: (eventData?.startTime)!, In: "HH:mm:ss", Out: "hh:mm a")
-        let endTime = Utility.getDateFormat(date: (eventData?.endTime)!, In: "HH:mm:ss", Out: "hh:mm a")
-        lblTime.text = "\(strTime) to \(endTime)"
-        lblDate.text = strDate
-//        lblTime.text = "timeeee"
-//        lblDate.text = "dateeee"
+//        let strTime = Utility.getDateFormat(date: startingTime, In: "HH:mm:ss", Out: "hh:mm a")
+//        let endTime = Utility.getDateFormat(date: endingTime, In: "HH:mm:ss", Out: "hh:mm a")
+//        lblTime.text = "\(strTime) to \(endTime)"
+          lblDate.text = strDate
+//        lblTime.text = ""
+//        lblDate.text = ""
 //        switch (dateComponents.weekday!)
 //        {
 //
@@ -345,16 +349,29 @@ class EventDetailController: BaseController {
 //    }
 //}
      
+     extension EventDetailController:UITextViewDelegate{
+        
+        func textView(_ textView: UITextView, shouldInteractWith URL: URL, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
+            print(URL)
+            return true
+        }
+     }
+     
 extension EventDetailController{
+    
+    
       
     func downloadFile(){
-        if let url = eventData?.eventURL{
-        //let url = eventData?.eventURL
-        let fileName = ""
-        let message = "Downloaded Event Flyer"
-        self.view.makeToast(message, duration: 1.5, position: .center)
-        
-        savePdf(urlString: url, fileName: fileName)
+        if let url  = eventData?.eventURL{
+                let fileName = ""
+                let message = "Downloaded Event Flyer"
+                self.view.makeToast(message, duration: 1.5, position: .center)
+                savePdf(urlString: url, fileName: fileName)
+
+        }
+        else{
+            let message = "No such file to Download"
+            self.view.makeToast(message, duration: 1.5, position: .center)
         }
       
     }

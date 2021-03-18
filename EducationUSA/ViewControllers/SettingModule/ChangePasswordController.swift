@@ -59,14 +59,14 @@ class ChangePasswordController: BaseController ,UITextFieldDelegate{
             confirmPassView.isHidden = true
             lblErrorConfirmNewPass.isHidden = true
             //lblTagLine.text = NSLocalizedString("Please enter your new password to reset your password", comment: "")
-            txtfldExistingPass.placeholder = NSLocalizedString("Enter new password", comment: "")
-            txtfldNewPass.placeholder = NSLocalizedString("Enter confirm password", comment: "")
+            txtfldExistingPass.placeholder = NSLocalizedString("Enter New Password", comment: "")
+            txtfldNewPass.placeholder = NSLocalizedString("Enter Confirm Password", comment: "")
             
             lblTitleNewPassword.text = txtfldNewPass.placeholder
             lblTitleExistingPassword.text = txtfldExistingPass.placeholder
             //topSpacing.constant = 114
         }else{
-            txtfldConfirmNewPass.placeholder = NSLocalizedString("Enter confirm password", comment: "")
+            txtfldConfirmNewPass.placeholder = NSLocalizedString("Enter Confirm Password", comment: "")
             lblTitleConfirmPassword.text = txtfldConfirmNewPass.placeholder
         }
         

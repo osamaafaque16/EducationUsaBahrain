@@ -254,7 +254,13 @@ extension FAQsController: ExpyTableViewDataSource , ExpyTableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        if faqData[section].descriptionValue == nil{
+            return 1
+        }
+        else{
+            return 2
+
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

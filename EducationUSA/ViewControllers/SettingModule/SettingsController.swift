@@ -40,7 +40,7 @@ class SettingsController: BaseController , UITableViewDataSource, UITableViewDel
                               settings(settingsOptions: NSLocalizedString("Login", comment: ""), optionImage:"set_logout_icon", englishLanguage: "", arabiLanguage: "")]
         }else{
             settingOptions = [settings(settingsOptions: NSLocalizedString("Notifications", comment: ""), optionImage:"set_not_icon", englishLanguage: "", arabiLanguage: ""),
-                            //  settings(settingsOptions: NSLocalizedString("Change Password", comment: ""), optionImage:"set_password_icon", englishLanguage: "", arabiLanguage: ""),
+                              settings(settingsOptions: NSLocalizedString("Change Password", comment: ""), optionImage:"set_password_icon", englishLanguage: "", arabiLanguage: ""),
                               settings(settingsOptions: NSLocalizedString("Profile", comment: ""), optionImage:"set_profile_icon", englishLanguage: "", arabiLanguage: ""),
                               settings(settingsOptions: NSLocalizedString("Terms and Conditions", comment: ""), optionImage:"set_terms_icon", englishLanguage: "", arabiLanguage: ""),
                                settings(settingsOptions: NSLocalizedString("About", comment: ""), optionImage:"set_about_icon", englishLanguage: "", arabiLanguage: ""),
@@ -157,21 +157,21 @@ class SettingsController: BaseController , UITableViewDataSource, UITableViewDel
         }else{
             switch indexPath.row {
                 
-              //todo:Osama
-              //Change Password remove
-//            case settingSelected.changePassword.rawValue:
-//
-//                if Singleton.sharedInstance.isGuest == true {
-//                    self.showAlert(title: NSLocalizedString("Alert!", comment: ""), subTitle: NSLocalizedString("Guest can't change password.", comment: ""), doneBtnTitle: nil, buttons: [NSLocalizedString("Login", comment: ""),NSLocalizedString("Cancel", comment: "")], type: "guest")
-//
-//                }else{
-//                    let storyBoard = AppConstants.APP_STORYBOARD.SETTING
-//
-//                    let changePassVC = storyBoard.instantiateViewController(withIdentifier: "ChangePasswordController") as! ChangePasswordController
-//                    self.navigationController?.pushViewController(changePassVC, animated:true)
-//                }
-//
-//                break
+             // todo:Osama
+             // Change Password remove
+            case settingSelected.changePassword.rawValue:
+
+                if Singleton.sharedInstance.isGuest == true {
+                    self.showAlert(title: NSLocalizedString("Alert!", comment: ""), subTitle: NSLocalizedString("Guest can't change password.", comment: ""), doneBtnTitle: nil, buttons: [NSLocalizedString("Login", comment: ""),NSLocalizedString("Cancel", comment: "")], type: "guest")
+
+                }else{
+                    let storyBoard = AppConstants.APP_STORYBOARD.SETTING
+
+                    let changePassVC = storyBoard.instantiateViewController(withIdentifier: "ChangePasswordController") as! ChangePasswordController
+                    self.navigationController?.pushViewController(changePassVC, animated:true)
+                }
+
+                break
                 
             case settingSelected.termsAndCondition.rawValue:
                 let storyBoard = AppConstants.APP_STORYBOARD.SETTING
@@ -317,11 +317,11 @@ class SettingsController: BaseController , UITableViewDataSource, UITableViewDel
 
 enum settingSelected:Int{
   
-   // case changePassword = 1
-    case profile = 1
-    case termsAndCondition = 2
-    case about = 3
-    case logout = 4
+    case changePassword = 1
+    case profile = 2
+    case termsAndCondition = 3
+    case about = 4
+    case logout = 5
 }
 enum settingSelectedGuest:Int{
     

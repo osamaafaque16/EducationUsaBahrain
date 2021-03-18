@@ -34,7 +34,7 @@ class EducationGuideCell: UITableViewCell {
         let URL = Foundation.URL(string: data.educationImage ?? "")
         
         //print(URL!)
-        cellBgImgView.image = UIImage(named: "no-image")?.af_imageAspectScaled(toFit: cellBgImgView.frame.size)
+        cellBgImgView.image = UIImage(named: "no-image")?.af_imageAspectScaled(toFill: cellBgImgView.frame.size)
        // cellBgImgView.image = UIImage(named: "")?.af.ima
 
         if URL != nil
@@ -42,7 +42,7 @@ class EducationGuideCell: UITableViewCell {
             cellBgImgView.af_setImage(
                 withURL: URL!,
                 placeholderImage:UIImage(named: "no-image")?.af_imageAspectScaled(toFit: cellBgImgView.bounds.size),
-                filter: AspectScaledToFitSizeFilter(size: cellBgImgView.bounds.size),
+                filter: AspectScaledToFillSizeFilter(size: cellBgImgView.bounds.size),
                 imageTransition: .crossDissolve(0.3)
             )
             

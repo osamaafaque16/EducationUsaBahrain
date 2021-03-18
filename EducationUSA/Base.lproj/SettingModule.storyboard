@@ -13,14 +13,11 @@
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue</string>
         </array>
-        <array key="Roboto-Bold_A.ttf">
+        <array key="Roboto-Bold.ttf">
             <string>Roboto-Bold</string>
         </array>
         <array key="Roboto-Light_6.ttf">
             <string>Roboto-Light</string>
-        </array>
-        <array key="Roboto-Medium_1.ttf">
-            <string>Roboto-Medium</string>
         </array>
         <array key="Roboto-Regular_D.ttf">
             <string>Roboto-Regular</string>
@@ -937,7 +934,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="No1-Yu-bfZ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" red="0.0" green="0.18823529410000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.18823529410000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>

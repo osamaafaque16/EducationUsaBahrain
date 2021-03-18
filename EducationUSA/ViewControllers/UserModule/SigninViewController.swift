@@ -116,6 +116,7 @@ class SigninViewController: BaseController, UITextFieldDelegate {
     
     @IBAction func guestClicked(_ sender: Any) {
         
+        UserDefaults.standard.set("0", forKey: "check")
         callGuestSignInService()
 //        Singleton.sharedInstance.isGuest = true
 //        let mainViewController = AppConstants.APP_STORYBOARD.HOME.instantiateInitialViewController()
@@ -292,6 +293,7 @@ extension SigninViewController {
             guard AccessToken.current != nil else {
                 return
             }
+            
             if result.isCancelled {
                 print("Cancelled \(error?.localizedDescription ?? "")")
             } else if let error = error {
@@ -337,6 +339,7 @@ extension SigninViewController {
                                                          "social_media_id": ProviderKey,
                                                          "device_type" : "ios",
                                                          "device_token" : Singleton.sharedInstance.deviceToken,
+                                                         "profile_image":ProfileImage,
                                                          "social_media_platform": "facebook"]
                     self.callSocialSignInService(parameter: param, loginType: .facebook)
                 }
@@ -396,6 +399,7 @@ extension SigninViewController {
                                     "social_media_id": ProviderKey,
                                     "device_type" : "ios",
                                     "device_token" : Singleton.sharedInstance.deviceToken,
+                                    "profile_image":ProfileImage,
                                     "social_media_platform": "twitter"]
                                     self.callSocialSignInService(parameter: param, loginType: .twitter)
                                     
@@ -464,6 +468,8 @@ extension SigninViewController {
             
             Singleton.sharedInstance.isGuest = false
             Singleton.sharedInstance.userData = user.result?.user
+//            Singleton.sharedInstance.userData?.userImage = "https://graph.facebook.com/771729073313305/picture?type=large&width=400&height=400"
+            
             Singleton.sharedInstance.accessToken = user.result?.user?.token
            
             // save user token in userdefault

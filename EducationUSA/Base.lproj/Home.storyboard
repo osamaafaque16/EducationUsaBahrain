@@ -127,7 +127,7 @@ Guideline Book</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1x-UZ-Enc">
                                                     <rect key="frame" x="0.0" y="0.0" width="182.33333333333334" height="152.33333333333334"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdR-Xl-hyp">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAQ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdR-Xl-hyp">
                                                             <rect key="frame" x="8" y="127.66666666666667" width="166.33333333333334" height="14.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="11"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -349,7 +349,7 @@ Advisor</string>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MfO-80-mxj">
                                                     <rect key="frame" x="0.0" y="0.0" width="182.33333333333334" height="152"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FullBright" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbg-OB-NSa">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FulBright" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbg-OB-NSa">
                                                             <rect key="frame" x="8" y="127.33333333333333" width="166.33333333333334" height="14.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="11"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -460,7 +460,7 @@ Advisor</string>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-2" translatesAutoresizingMaskIntoConstraints="NO" id="TUc-ut-Eaf">
                                                                     <rect key="frame" x="0.0" y="-9.3333333333333357" width="72" height="67"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WT1-MC-5HK">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="May" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WT1-MC-5HK">
                                                                             <rect key="frame" x="0.0" y="0.0" width="72" height="25.333333333333332"/>
                                                                             <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                                             <color key="textColor" red="0.92156862750000001" green="0.0039215686269999999" blue="0.12941176469999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -469,7 +469,7 @@ Advisor</string>
                                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="autoScale" value="YES"/>
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJS-2m-Z1W">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" ambiguous="YES" text="12" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJS-2m-Z1W">
                                                                             <rect key="frame" x="0.0" y="23.333333333333336" width="72" height="31.333333333333336"/>
                                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                                                             <color key="textColor" red="0.0" green="0.2274509804" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -478,7 +478,7 @@ Advisor</string>
                                                                                 <userDefinedRuntimeAttribute type="boolean" keyPath="autoScale" value="YES"/>
                                                                             </userDefinedRuntimeAttributes>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mac-qh-XmD">
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="2017" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mac-qh-XmD">
                                                                             <rect key="frame" x="0.0" y="52.666666666666664" width="72" height="14.333333333333336"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <color key="textColor" red="0.0" green="0.2274509804" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -660,10 +660,10 @@ Advisor</string>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2S-L1-v67">
-                                                            <rect key="frame" x="0.0" y="0.0" width="380.66666666666669" height="46.666666666666664"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="380.66666666666669" height="31"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Education USA?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tde-1N-Fju">
-                                                                    <rect key="frame" x="8" y="0.0" width="364.66666666666669" height="46.666666666666664"/>
+                                                                    <rect key="frame" x="8" y="0.0" width="364.66666666666669" height="31"/>
                                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -678,7 +678,7 @@ Advisor</string>
                                                                 <constraint firstAttribute="trailing" secondItem="Tde-1N-Fju" secondAttribute="trailing" constant="8" id="HcY-HL-CPY"/>
                                                                 <constraint firstItem="Tde-1N-Fju" firstAttribute="top" secondItem="m2S-L1-v67" secondAttribute="top" id="QMF-f4-fXH"/>
                                                                 <constraint firstAttribute="bottom" secondItem="Tde-1N-Fju" secondAttribute="bottom" id="Tp7-Rd-twg"/>
-                                                                <constraint firstAttribute="width" secondItem="m2S-L1-v67" secondAttribute="height" multiplier="245:30" id="bbX-Nh-FLK"/>
+                                                                <constraint firstAttribute="width" secondItem="m2S-L1-v67" secondAttribute="height" multiplier="245:20" id="bbX-Nh-FLK"/>
                                                                 <constraint firstItem="Tde-1N-Fju" firstAttribute="leading" secondItem="m2S-L1-v67" secondAttribute="leading" constant="8" id="faJ-pb-XfL"/>
                                                             </constraints>
                                                         </view>
@@ -1277,7 +1277,7 @@ Advisor</string>
                                                                 <fragment content="View Attachment    ">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.80392156862745101" green="0.0" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                                        <font key="NSFont" metaFont="menu" size="11"/>
+                                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
                                                                         <integer key="NSUnderline" value="1"/>
                                                                     </attributes>
                                                                 </fragment>
@@ -1388,7 +1388,7 @@ Advisor</string>
                                                 <fragment content="View Attachment    ">
                                                     <attributes>
                                                         <color key="NSColor" red="0.80392156862745101" green="0.0" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="menu" size="11"/>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
                                                 </fragment>
@@ -1772,7 +1772,7 @@ Advisor</string>
                                                     </label>
                                                 </subviews>
                                             </stackView>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="dsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsd" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbj-Sb-umB">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="dsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsddsd" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sbj-Sb-umB">
                                                 <rect key="frame" x="15" y="350.66666666666669" width="384" height="229.00000000000006"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -1781,6 +1781,7 @@ Advisor</string>
                                                 <color key="textColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                             </textView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JRf-Ut-Xp4">
                                                 <rect key="frame" x="12" y="584.66666666666663" width="390" height="50.666666666666629"/>
@@ -2053,7 +2054,7 @@ Advisor</string>
                                                 <fragment content="View Attachment    ">
                                                     <attributes>
                                                         <color key="NSColor" red="0.80392156862745101" green="0.0" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <font key="NSFont" metaFont="menu" size="11"/>
+                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
                                                         <integer key="NSUnderline" value="1"/>
                                                     </attributes>
                                                 </fragment>

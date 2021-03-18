@@ -26,7 +26,10 @@ class HomeViewController: BaseController, UITableViewDelegate, UITableViewDataSo
         currentController = Controllers.Home
         super.viewDidLoad()
         
-        
+     //   self.addBadge(itemvalue: "10")
+        addBadge(badgeNumber: "0")
+
+
 
         if Singleton.sharedInstance.isUserLoggedInApp() && Singleton.sharedInstance.isGuest != true {
            // CommonServices.shared.registerPushNotification(UDID: (UIDevice.current.identifierForVendor?.uuidString)!, fcmToken: Singleton.sharedInstance.deviceToken)
@@ -182,7 +185,7 @@ class HomeViewController: BaseController, UITableViewDelegate, UITableViewDataSo
             return
         }
         
-        let parameter:[String:Any] = ["user_id":(Singleton.sharedInstance.userData?.id)!,"offset":String(currentPage)]
+        let parameter:[String:Any] = ["user_id":(Singleton.sharedInstance.userData?.id),"offset":String(currentPage)]
         
         if !isRefreshing && !shouldShowLoadingCell {
             self.showNormalHud(NSLocalizedString("Loading...", comment: ""))

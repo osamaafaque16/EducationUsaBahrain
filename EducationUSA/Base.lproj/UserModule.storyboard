@@ -1265,8 +1265,9 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-gV-UUr">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="149.66666666666666"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="hRi-MW-8tu">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="hRi-MW-8tu">
                                                                 <rect key="frame" x="122.33333333333333" y="20.333333333333329" width="129.33333333333337" height="129.33333333333337"/>
+                                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="hRi-MW-8tu" secondAttribute="height" multiplier="1:1" id="B0z-rN-LSI"/>
                                                                 </constraints>
@@ -1494,7 +1495,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="xeL-C2-MAu"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="13"/>
                                                 <state key="normal" title="EDIT PROFILE">
                                                     <color key="titleColor" red="0.0" green="0.18823529410000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" red="0.0" green="0.18823529410000001" blue="0.41960784309999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1827,8 +1828,9 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qn8-9v-iYh">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="165.66666666666666"/>
                                                         <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="KBc-tO-7Ob">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imageplaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="KBc-tO-7Ob">
                                                                 <rect key="frame" x="135.33333333333331" y="22.333333333333329" width="143.33333333333331" height="143.33333333333337"/>
+                                                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="KBc-tO-7Ob" secondAttribute="height" multiplier="1:1" id="bAs-c7-iEp"/>
                                                                 </constraints>
@@ -2600,8 +2602,8 @@
         <image name="footer-logo" width="98.333335876464844" height="44.666667938232422"/>
         <image name="fullnamefieldicon" width="18" height="19"/>
         <image name="gender_icon" width="22.333333969116211" height="20.666666030883789"/>
+        <image name="imageplaceholder" width="225" height="225"/>
         <image name="login-topicon" width="248" height="110.66666412353516"/>
-        <image name="noimage" width="130.33332824707031" height="130.33332824707031"/>
         <image name="passwordfieldicon" width="14.333333015441895" height="20.666666030883789"/>
         <image name="set_lanuage_icon" width="20" height="20"/>
         <image name="signinfieldbottombg1" width="338" height="75.666664123535156"/>

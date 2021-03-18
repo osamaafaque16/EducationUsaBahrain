@@ -54,8 +54,21 @@ public class EventBase: Object, Mappable {
   }
 
     static func getEvents(urlPath:String,parameter:[String:Any]?,vc:BaseController,completionHandler:@escaping (_ event:EventBase)->Void){
+      
+        //todo:Osama
+//        var header: [String : String]
+//        if Singleton.sharedInstance.isGuest {
+//
+//            header = ["Authorization" : "Bearer "+(Singleton.sharedInstance.accessToken ?? "") ]
+//
+//        }
+//
+//        else{
+//            header = ["Authorization" : "Bearer "+(Singleton.sharedInstance.accessToken!) ]
+//
+//        }
         
-        let header = ["Authorization" : "Bearer "+(Singleton.sharedInstance.accessToken)!]
+        let header = ["Authorization" : "Bearer "+(Singleton.sharedInstance.accessToken!) ]
         
         AFWrapper.shared.requestGETURLWithHeader(urlPath, parameter, header, success: { (JSONResponse) in
             

@@ -138,6 +138,8 @@ class ProfileController: BaseController,UIScrollViewDelegate
     func setData() {
         
         let URL = Foundation.URL(string: Singleton.sharedInstance.userData?.userImage ?? "")
+ //      let URL = Foundation.URL(string: "https://graph.facebook.com/771729073313305/picture?type=large&width=400&height=400" ?? "")
+
         
         //print(URL!)
         if URL != nil

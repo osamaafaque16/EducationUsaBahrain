@@ -62,6 +62,7 @@ extension FAQExpendCell:UITextViewDelegate{
         
         else{
             
+            
             if #available(iOS 10.0, *) {
          
                 UIApplication.shared.open(webUrl! as URL, options: [:], completionHandler: nil)

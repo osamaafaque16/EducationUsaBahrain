@@ -211,7 +211,7 @@ class EditProfileController: BaseController,UIScrollViewDelegate
          let controller = MICountryPicker()
          controller.delegate = self
          controller.showCallingCodes = true
-        self.flag = true
+         self.flag = true
          self.present(controller, animated: true, completion: nil)
         
     }
@@ -307,7 +307,12 @@ class EditProfileController: BaseController,UIScrollViewDelegate
             return
         }, cancel: { ActionStringCancelBlock in return }, origin: sender.superview!.superview)
         //let secondsInWeek: TimeInterval = 7 * 24 * 60 * 60;
-        datePicker?.maximumDate = Date()
+         datePicker?.maximumDate = Date()
+//        let calendar = Calendar.current
+//        let backDate = calendar.date(byAdding: .year, value: -10, to: Date())
+//          print("\(backDate)")
+//        datePicker?.maximumDate = backDate
+    
         
         datePicker?.show()
         
@@ -576,11 +581,14 @@ extension EditProfileController: MICountryPickerDelegate{
         
         if flag {
                btnCode.setTitle(dialCode, for: .normal)
+               btnNationality.setTitle(name, for: .normal)
+
                self.flag = false
 
            }
            else {
                btnNationality.setTitle(name, for: .normal)
+               
                self.flag = true
 
 

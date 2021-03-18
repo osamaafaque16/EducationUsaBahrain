@@ -112,7 +112,7 @@ class SplashController: BaseController {
 //        Singleton.sharedInstance.userData = realm.objects(UserUser.self).first
         
 //            let value = Constants.USER_DEFAULTS.value(forKey: "check") as? Bool
-            
+//
 //            if value == nil {
 //                print("App First Time Open")
 //                callGuestSignInServicesss()
@@ -127,52 +127,74 @@ class SplashController: BaseController {
 
                 if Singleton.sharedInstance.userData != nil {
 
+                    UserDefaults.standard.removeObject(forKey: "check")
                     let mainViewController = AppConstants.APP_STORYBOARD.HOME.instantiateInitialViewController()
                     Constants.APP_DELEGATE.ShowHomeController(mainViewController!)
-                }else{
-                    let loginVC = AppConstants.APP_STORYBOARD.USER.instantiateViewController(withIdentifier: "loginNavigation")
-                    Constants.APP_DELEGATE.ShowHomeController(loginVC)
                 }
-//            }
+                
+                let guest = UserDefaults.standard.value(forKey: "check") as? String
+
+                 if guest == "0"{
+                    callGuestSignInServicesss()
+                    let mainViewController = AppConstants.APP_STORYBOARD.HOME.instantiateInitialViewController()
+                    Constants.APP_DELEGATE.ShowHomeController(mainViewController!)
+                }
+                    
+                if Singleton.sharedInstance.userData == nil {
+
+                    //  UserDefaults.standard.removeObject(forKey: "check")
+                     let loginVC = AppConstants.APP_STORYBOARD.USER.instantiateViewController(withIdentifier: "loginNavigation")
+                     Constants.APP_DELEGATE.ShowHomeController(loginVC)
+                }
+                    
+        
+                
+//                else{
+//                   // UserDefaults.standard.removeObject(forKey: "check")
+//                    let loginVC = AppConstants.APP_STORYBOARD.USER.instantiateViewController(withIdentifier: "loginNavigation")
+//                    Constants.APP_DELEGATE.ShowHomeController(loginVC)
+//
+//                }
+ //          }
     }
 }
 
-//extension SplashController {
-//
-//    func callGuestSignInServicesss() {
-//
-//    self.view.endEditing(true)
-//
-//       if !Connectivity.isConnectedToInternet {
-//           self.view.makeToast(AppString.internetUnreachable, duration: 1.5, position: .center)
-//           return
-//       }
-//
-//       let parameter = [
-//           "device_type" : "ios",
-//           "device_token" : Singleton.sharedInstance.deviceToken
-//       ]
-//       print(parameter)
-//       self.showNormalHud(NSLocalizedString("Loading...", comment: ""))
-//
-//       UserBase.signIn_SignUp(urlPath:BASE_URL+GUEST_SIGNIN, parameters: parameter, header: nil, vc: self) { (user) in
-//
-//           self.removeNormalHud()
-//
-//           if user.code != 200  {
-//               self.view.makeToast(user.message, duration: 1.5, position: .center)
-//               return
-//           }
-//
-//
-//           Singleton.sharedInstance.isGuest = true
-//           Singleton.sharedInstance.userData = user.result?.guest
-//           Singleton.sharedInstance.accessToken = user.result?.guest?.token
-//           let mainViewController = AppConstants.APP_STORYBOARD.HOME.instantiateInitialViewController()
-//           Constants.UIWINDOW?.rootViewController = mainViewController
-//           UIView.transition(with: Constants.UIWINDOW!, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
-//
-//
-//       }
-//    }
-//}
+extension SplashController {
+
+    func callGuestSignInServicesss() {
+
+    self.view.endEditing(true)
+
+       if !Connectivity.isConnectedToInternet {
+           self.view.makeToast(AppString.internetUnreachable, duration: 1.5, position: .center)
+           return
+       }
+
+       let parameter = [
+           "device_type" : "ios",
+           "device_token" : Singleton.sharedInstance.deviceToken
+       ]
+       print(parameter)
+       self.showNormalHud(NSLocalizedString("Loading...", comment: ""))
+
+       UserBase.signIn_SignUp(urlPath:BASE_URL+GUEST_SIGNIN, parameters: parameter, header: nil, vc: self) { (user) in
+
+           self.removeNormalHud()
+
+           if user.code != 200  {
+               self.view.makeToast(user.message, duration: 1.5, position: .center)
+               return
+           }
+
+
+           Singleton.sharedInstance.isGuest = true
+           Singleton.sharedInstance.userData = user.result?.guest
+           Singleton.sharedInstance.accessToken = user.result?.guest?.token
+           let mainViewController = AppConstants.APP_STORYBOARD.HOME.instantiateInitialViewController()
+           Constants.UIWINDOW?.rootViewController = mainViewController
+           UIView.transition(with: Constants.UIWINDOW!, duration: 0.3, options: [.transitionCrossDissolve], animations: nil, completion: nil)
+
+
+       }
+    }
+}

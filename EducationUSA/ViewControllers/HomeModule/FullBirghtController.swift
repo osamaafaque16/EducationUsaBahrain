@@ -153,7 +153,7 @@ class FullBirghtController: BaseController , UITextViewDelegate{
             return
         }
         //api/full-bright?offset=1&user_id=2218
-        let parameter:[String:Any] = ["user_id":(Singleton.sharedInstance.userData?.id)!]
+        let parameter:[String:Any] = ["user_id":(Singleton.sharedInstance.userData?.id)]
         
         self.showNormalHud(NSLocalizedString("Loading...", comment: ""))
         
@@ -179,11 +179,11 @@ class FullBirghtController: BaseController , UITextViewDelegate{
         print("Link Selected!")
         //https://educationusachat.stagingic.com/advisor
         if URL.absoluteString == "https://chat.educationusa.live/advisor" {
-            
+
             let contactVC = AppConstants.APP_STORYBOARD.SETTING.instantiateViewController(withIdentifier: "ContactUsController") as! ContactUsController
             self.navigationController?.pushViewController(contactVC
                 , animated:true)
-            
+
             return false
         }
         return true
@@ -200,7 +200,7 @@ extension FullBirghtController: UIWebViewDelegate{
         case .linkClicked:
             // Open links in Safari
             guard let url = request.url else { return true }
-            
+
             if #available(iOS 10.0, *) {
                 UIApplication.shared.open(url, options: [:], completionHandler: nil)
             } else {
@@ -232,23 +232,23 @@ extension FullBirghtController: WKNavigationDelegate{
     }
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        
-        
+
+
         if navigationAction.navigationType == .linkActivated{
-            
+
             let url = navigationAction.request.url
-            
+
             UIApplication.shared.canOpenURL(url!)
             UIApplication.shared.open(url!, options: [:], completionHandler: nil)
             decisionHandler(.cancel)
         }
-        
+
         else{
             decisionHandler(.allow)
         }
-        
-        
-        
+
+
+
 //        if navigationAction.navigationType == .linkActivated  {
 //            if let url = navigationAction.request.url,
 //                /*let host = url.host, !host.hasPrefix("www.google.com"),*/
